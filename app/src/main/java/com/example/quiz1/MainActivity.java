@@ -67,7 +67,7 @@ public class MainActivity extends AppCompatActivity {
         btn_send.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if ((!edt_age.getText().toString().isEmpty())||(!edt_name.getText().toString().isEmpty())){
+                if ((!edt_age.getText().toString().isEmpty())&&(!edt_name.getText().toString().isEmpty())){
                     editor.putString("Nombre", edt_name.getText().toString());
                     editor.putString("Edad", edt_age.getText().toString());
                     editor.putString("Categoria", spinner.getSelectedItem().toString());
