@@ -33,7 +33,7 @@ public class deporte extends AppCompatActivity {
                 editor.remove("Edad");
                 editor.remove("Categoria");
                 editor.commit();
-                Intent i = new Intent(musica.this, MainActivity.class);
+                Intent i = new Intent(deporte.this, MainActivity.class);
                 startActivity(i);
             }
         });
